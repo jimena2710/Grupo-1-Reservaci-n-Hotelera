@@ -8,8 +8,8 @@ public class Grupo1ReservacionHotelera {
          
             
             SwingUtilities.invokeLater(() -> {
-                Login loginVista = new Login();
-                new LoginControlador(loginVista, conexion);
+                Login login = new Login();
+                new LoginControlador(login, conexion);
             });
         } catch (Exception e) {
             System.err.println("Error: " + e.getMessage());
