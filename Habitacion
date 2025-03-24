@@ -4,12 +4,14 @@ public class Habitacion {
     private int numero;
     private String tipo;
     private boolean disponible;
+    private double precio;
 
     public Habitacion(int id, int numero, String tipo, boolean disponible) {
         this.id = id;
         this.numero = numero;
         this.tipo = tipo;
         this.disponible = disponible;
+        this.precio = precio;
     }
 
     public int getId() {
@@ -26,5 +28,8 @@ public class Habitacion {
 
     public boolean isDisponible() {
         return disponible;
+    }
+    public double getPrecio() {
+        return precio;
     }
 }
