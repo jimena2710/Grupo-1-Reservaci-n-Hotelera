@@ -1,0 +1,15 @@
+public class Reserva {
+    private int id;
+    private int idHuesped;
+    private int idHabitacion;
+    private String fechaInicio;
+    private String fechaFin;
+
+    public Reserva(int id, int idHuesped, int idHabitacion, String fechaInicio, String fechaFin) {
+        this.id = id;
+        this.idHuesped = idHuesped;
+        this.idHabitacion = idHabitacion;
+        this.fechaInicio = fechaInicio;
+        this.fechaFin = fechaFin;
+    }
+}
