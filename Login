@@ -1,0 +1,48 @@
+package com.mycompany.grupo1reservacionhotelera;
+
+import javax.swing.*;
+import java.awt.*;
+
+public class Login extends JFrame {
+    private JTextField txtUsuario;
+    private JPasswordField txtContrasena;
+    private JButton btnIniciarSesion;
+
+  // interfaz gráfica de inicio de sesión.
+ //permite al usuario ingresar su info para acceder al sistema.
+
+    public Login() { //configuración del inicio de sesión
+        try {
+            setTitle("Inicio de Sesión");
+            setSize(300, 200);
+            setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+            setLocationRelativeTo(null);
+            setLayout(new GridLayout(3, 2));
+            
+            add(new JLabel("Usuario:"));
+            txtUsuario = new JTextField();
+            add(txtUsuario);
+            
+            add(new JLabel("Contraseña:"));
+            txtContrasena = new JPasswordField();
+            add(txtContrasena);
+            
+            btnIniciarSesion = new JButton("Iniciar Sesión");
+            add(btnIniciarSesion);
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(this, "Error al inicializar la interfaz: " + e.getMessage(), "Error", JOptionPane.ERROR_MESSAGE);
+        }
+    }
+
+    public JTextField getTxtUsuario() {
+        return txtUsuario;
+    }
+
+    public JPasswordField getTxtContrasena() {
+        return txtContrasena;
+    }
+
+    public JButton getBtnIniciarSesion() {
+        return btnIniciarSesion;
+    }
+}
