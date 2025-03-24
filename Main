@@ -1,1 +1,19 @@
+import javax.swing.SwingUtilities;
+
+public class Grupo1ReservacionHotelera {
+
+    public static void main(String[] args) {
+          try {
+            Conexion conexion = new Conexion();//conexion es la clase
+         
+            
+            SwingUtilities.invokeLater(() -> {
+                Login loginVista = new Login();
+                new LoginControlador(loginVista, conexion);
+            });
+        } catch (Exception e) {
+            System.err.println("Error: " + e.getMessage());
+        }
+    }
+    }
 
