@@ -29,8 +29,8 @@ public class Login extends JFrame {
             
             btnIniciarSesion = new JButton("Iniciar Sesión");
             add(btnIniciarSesion);
-        } catch (Exception e) {
-            JOptionPane.showMessageDialog(this, "Error al inicializar la interfaz: " + e.getMessage(), "Error", JOptionPane.ERROR_MESSAGE);
+        } catch (IOException e) {
+            JOptionPane.showMessageDialog(this, "Error al inicializar la interfaz: " + e.getMessage(), JOptionPane.ERROR_MESSAGE);
         }
     }
 
