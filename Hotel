@@ -1,9 +1,11 @@
+import java.util.ArrayList;
+
 public class Hotel {
 
     private int id;
     private String nombre;
     private String direccion;
-    private List<Habitacion> habitaciones;
+    private ArratList<Habitacion> habitaciones;
     
     public Hotel(int id, String nombre, String direccion) {
         this.id = id;
