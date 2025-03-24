@@ -16,7 +16,7 @@ this.vista.getBtnIniciarSesion().addActionListener(e -> iniciarSesion());
         String usuario = vista.getTxtUsuario().getText();
         String contrasena = new String(vista.getTxtContrasena().getPassword());
 
-        if (conexion.validarUsuario(usuario, contrasena)) {
+        if (conexion.validarUsuario(usuario, contrasena)) { //validar usuario en base de datos
             JOptionPane.showMessageDialog(vista, "Inicio de sesión exitoso");
         } else {
             JOptionPane.showMessageDialog(vista, "Credenciales incorrectas", "Error", JOptionPane.ERROR_MESSAGE);
